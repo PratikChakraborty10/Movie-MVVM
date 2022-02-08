@@ -14,8 +14,11 @@ const val BASE_URL = "https://api.themoviedb.org/3/"
 const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 const val COVER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 
-//    https://api.themoviedb.org/3/movie/popular?api_key=7c089cc11a7cf12ebfe45bde24431e53
-//    https://api.themoviedb.org/3/movie/739413?api_key=7c089cc11a7cf12ebfe45bde24431e53&language=en-US
+const val FIRST_PAGE = 1
+const val POST_PER_PAGE = 20
+
+//    https://api.themoviedb.org/3/movie/popular?api_key=7c089cc11a7cf12ebfe45bde24431e53&page=1
+//    https://api.themoviedb.org/3/movie/739413?api_key=7c089cc11a7cf12ebfe45bde24431e53
 //    https://image.tmdb.org/t/p/w342/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg
 //    https://image.tmdb.org/t/p/w342/AvnqpRwlEaYNVL6wzC4RN94EdSd.jpg
 

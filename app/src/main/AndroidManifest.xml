@@ -16,7 +16,7 @@
             android:name="com.pratikchakraborty.moviemvvm.ui.single_movie_details.SingleMovie"
             android:exported="true" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.popular_movie.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -2,4 +2,6 @@
     <string name="app_name">MovieMVVM</string>
     <string name="text_sample_overview">Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.</string>
     <string name="the_data_have_been_fetched_from_tmdb">*The data have been fetched from <u>TMDB</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
