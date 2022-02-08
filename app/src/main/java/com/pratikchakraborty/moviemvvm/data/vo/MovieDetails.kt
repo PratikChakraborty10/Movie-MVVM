@@ -14,6 +14,7 @@ data class MovieDetails(
     @SerializedName("release_date")
     val releaseDate: String?,
     val revenue: Int?,
+    val homepage: String?,
     val runtime: Int?,
     val status: String?,
     val tagline: String?,

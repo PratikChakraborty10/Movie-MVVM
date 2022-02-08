@@ -69,4 +69,6 @@ dependencies {
 
     // Rating Bar
     implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+
+    implementation "androidx.browser:browser:1.2.0"
 }

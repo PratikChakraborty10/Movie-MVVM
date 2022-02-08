@@ -1,9 +1,14 @@
 package com.pratikchakraborty.moviemvvm.ui.single_movie_details
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -16,6 +21,7 @@ import com.pratikchakraborty.moviemvvm.data.api.TheMovieDBClient
 import com.pratikchakraborty.moviemvvm.data.api.TheMovieDBInterface
 import com.pratikchakraborty.moviemvvm.data.repository.NetworkState
 import com.pratikchakraborty.moviemvvm.data.vo.MovieDetails
+import com.pratikchakraborty.moviemvvm.ui.popular_movie.MainActivity
 import kotlinx.android.synthetic.main.activity_single_movie.*
 import java.text.NumberFormat
 import java.util.*
@@ -58,6 +64,34 @@ class SingleMovie : AppCompatActivity() {
 
         val formatCurrency = NumberFormat.getCurrencyInstance(Locale.US)
         budget_tv.text = formatCurrency.format(it.budget)
+
+        val url = it.homepage.toString()
+        watch_btn.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            //set title for alert dialog
+            builder.setTitle(R.string.dialogTitle)
+            //set message for alert dialog
+            builder.setMessage(R.string.dialogMessage)
+            builder.setIcon(android.R.drawable.ic_dialog_alert)
+            builder.setPositiveButton("Yes"){dialogInterface, which ->
+                if(url != null) {
+                    val builder = CustomTabsIntent.Builder()
+                    val customTabsIntent = builder.build()
+                    customTabsIntent.launchUrl(this, Uri.parse(url))
+                } else {
+                    Toast.makeText(applicationContext,"Link not found!",Toast.LENGTH_LONG).show()
+                }
+            }
+            //performing negative action
+            builder.setNegativeButton("No"){dialogInterface, which ->
+                Toast.makeText(applicationContext,"clicked No",Toast.LENGTH_LONG).show()
+            }
+            // Create the AlertDialog
+            val alertDialog: AlertDialog = builder.create()
+            // Set other dialog properties
+            alertDialog.setCancelable(false)
+            alertDialog.show()
+        }
 
         val movieCoverURL = COVER_BASE_URL + it.backdropPath
         Glide.with(this)

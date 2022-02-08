@@ -4,4 +4,8 @@
     <string name="the_data_have_been_fetched_from_tmdb">*The data have been fetched from <u>TMDB</u></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialogTitle">Alert</string>
+    <string name="dialogMessage">You will be redirected to the respective OTT Website/App to watch this movie.</string>
+    <string name="nullTitle">Link not found</string>
+    <string name="nullURL">The following movie link is not found at this moment. Please check again with some other movie</string>
 </resources>
