@@ -31,7 +31,8 @@
             android:layout_height="match_parent"
             android:id="@+id/rv_movie_list"
             android:layout_margin="4dp"
-            android:scrollbars="vertical"/>
+            android:scrollbars="vertical"
+            tools:listitem="@layout/movie_list_item"/>
 
 
     </LinearLayout>

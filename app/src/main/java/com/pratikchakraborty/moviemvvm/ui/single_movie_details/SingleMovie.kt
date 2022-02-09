@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.pratikchakraborty.moviemvvm.R
 import com.pratikchakraborty.moviemvvm.data.api.COVER_BASE_URL
 import com.pratikchakraborty.moviemvvm.data.api.POSTER_BASE_URL
@@ -22,6 +23,7 @@ import com.pratikchakraborty.moviemvvm.data.api.TheMovieDBInterface
 import com.pratikchakraborty.moviemvvm.data.repository.NetworkState
 import com.pratikchakraborty.moviemvvm.data.vo.MovieDetails
 import com.pratikchakraborty.moviemvvm.ui.popular_movie.MainActivity
+import jp.wasabeef.glide.transformations.BlurTransformation
 import kotlinx.android.synthetic.main.activity_single_movie.*
 import java.text.NumberFormat
 import java.util.*
@@ -96,6 +98,7 @@ class SingleMovie : AppCompatActivity() {
         val movieCoverURL = COVER_BASE_URL + it.backdropPath
         Glide.with(this)
             .load(movieCoverURL)
+            .apply(RequestOptions.bitmapTransform(BlurTransformation(15, 2)))
             .into(cover_image)
 
         val moviePosterURL = POSTER_BASE_URL + it.posterPath

@@ -14,7 +14,7 @@ const val BASE_URL = "https://api.themoviedb.org/3/"
 const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 const val COVER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 
-const val FIRST_PAGE = 1
+const val FIRST_PAGE = 10
 const val POST_PER_PAGE = 20
 
 //    https://api.themoviedb.org/3/movie/popular?api_key=7c089cc11a7cf12ebfe45bde24431e53&page=1
