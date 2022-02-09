@@ -6,6 +6,7 @@
         <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/drawable/box_layout.xml" value="0.1045" />
         <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/drawable/watch_btn_bg.xml" value="0.1045" />
         <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/layout/activity_main.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/layout/activity_search_movie.xml" value="0.13240740740740742" />
         <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/layout/activity_single_movie.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/layout/fragment_home.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/layout/fragment_info.xml" value="0.20052083333333334" />
@@ -13,6 +14,7 @@
         <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/layout/movie_list_item.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/layout/network_state_item.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/menu/menu.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/bille/AndroidStudioProjects/MovieMVVM/app/src/main/res/menu/search_menu.xml" value="0.17552083333333332" />
       </map>
     </option>
   </component>

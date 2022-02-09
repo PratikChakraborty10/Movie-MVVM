@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.pratikchakraborty.moviemvvm">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,9 +11,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MovieMVVM" tools:ignore="GoogleAppIndexingWarning">
+        android:theme="@style/Theme.MovieMVVM"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name="com.pratikchakraborty.moviemvvm.ui.single_movie_details.SingleMovie"
+            android:name=".ui.search_movie.SearchMovie"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ui.single_movie_details.SingleMovie"
             android:exported="true" />
         <activity
             android:name=".ui.popular_movie.MainActivity"

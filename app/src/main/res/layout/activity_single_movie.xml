@@ -220,6 +220,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/product_sans_regular"
                         android:textColor="#086dd1"
+                        android:clickable="true"
                         android:textSize="24sp" />
 
                     <TextView
@@ -227,6 +228,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/product_sans_regular"
                         android:text=" / 10"
+                        android:clickable="true"
                         android:textColor="#086dd1"
                         android:textSize="24sp" />
 
