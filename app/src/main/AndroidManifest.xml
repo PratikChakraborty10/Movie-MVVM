@@ -18,6 +18,7 @@
         <activity
             android:name=".ui.SplashActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.MovieDetails">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,14 +29,17 @@
         <activity
             android:name=".ui.series.SeriesActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.MovieDetails"/>
         <activity
             android:name=".ui.single_movie_details.SingleMovie"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.MovieDetails" />
         <activity
             android:name=".ui.popular_movie.MainActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.MovieDetails">
 
         </activity>
