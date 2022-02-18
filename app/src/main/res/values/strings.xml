@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MovieMVVM</string>
+    <string name="app_name">Movie Mania</string>
     <string name="text_sample_overview">Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.</string>
     <string name="the_data_have_been_fetched_from_tmdb">*The data have been fetched from <u>TMDB</u></string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -8,4 +8,6 @@
     <string name="dialogMessage">You will be redirected to the respective OTT Website/App to watch this movie.</string>
     <string name="nullTitle">Link not found</string>
     <string name="nullURL">The following movie link is not found at this moment. Please check again with some other movie</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

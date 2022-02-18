@@ -75,4 +75,10 @@ dependencies {
     implementation 'jp.wasabeef:glide-transformations:4.3.0'
     // If you want to use the GPU Filters
     implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+
+    //Circular ImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
